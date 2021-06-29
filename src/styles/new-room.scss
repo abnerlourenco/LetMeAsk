@@ -1,4 +1,4 @@
-#page-auth {
+#page-new-room {
   display: flex;
   align-items: stretch;
   height: 100vh;
@@ -55,70 +55,51 @@
       align-self: center;
     }
 
+    strong {
+      height: 2.5rem;
+      padding: 0 2rem;
+      color: var(--gray-basic);
+      margin: 4rem 0 1.5rem;
+
+      font: 700 1.5rem 'Poppins', sans-serif;
+    }
+
     form {
       input {
         height: 3rem;
-        border-radius: 0.5rem;
-        padding: 0 1rem;
+        width: 20rem;
         background: var(--white);
         border: 2px solid var(--gray-white);
+        border-radius: 0.5rem;
+        padding: 0 2rem;
 
         text-align: center;
       }
 
-      button, input {
+      button, input{
         width: 100%;
       }
     }
-  }
 
-  .google-button {
-    margin-top: 4rem;
-    height: 3rem;
-    border-radius: 0.5rem;
-    font-weight: 500;
-    background: var(--red-200);
-    color: var(--white);
+    .existing-room {
+      display: flex;
+      align-self: center;
+      
+      p {
+        font-size: 14px;
+        color: var(--gray-white);
+        margin-top: 1rem;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        a {
+          margin-left: 3px;
+          color: var(--purple);
+          text-decoration: none;
 
-    border: 0;
-
-    transition: filter 0.2s;
-
-    img {
-      margin-right: 0.5rem;
-    }
-
-    &:hover {
-      filter: brightness(0.9);
-    }
-  }
-  
-  .separator {
-    font-size: 0.875rem; 
-    color: var(--gray-white);
-    
-    margin: 2rem 0;
-    display: flex;
-    align-items: center;
-
-    &::before {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--gray-white);
-      margin-right: 1rem;
-    }
-
-    &::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--gray-white);
-      margin-left: 1rem;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
     }
   }
 }
