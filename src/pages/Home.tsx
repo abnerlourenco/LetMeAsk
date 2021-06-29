@@ -3,6 +3,8 @@ import logoImg from '../assets/images/logo.svg';
 import googleIconImg from '../assets/images/google-icon.svg';
 import iconLogin from '../assets/images/log-in 1.svg'
 
+import { Button } from '../components/Button';
+
 import '../styles/home-auth.scss';
 
 export function Home() {
@@ -28,10 +30,10 @@ export function Home() {
               type="text"
               placeholder="Digite o código da sala" 
             />
-            <button type="submit">
+            <Button type="submit">
               <img src={iconLogin} alt="Ícone de entrada" />
               Entrar na sala
-            </button>
+            </Button>
           </form>
         </div>
       </main>
