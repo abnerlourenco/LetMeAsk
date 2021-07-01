@@ -7,7 +7,7 @@ import googleIconImg from '../assets/images/google-icon.svg';
 import iconLogin from '../assets/images/log-in 1.svg'
 
 import { Button } from '../components/Button';
-import { AuthContext } from '../App';
+import { AuthContext } from '../contexts/AuthContext';
 
 import '../styles/home-auth.scss';
 
